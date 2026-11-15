@@ -1,0 +1,14 @@
+# Required
+pygame>=2.1
+Pillow
+
+# Optional (Windows) - GameClub runs without them, with fewer features:
+#   hidapi   -> GameSir controller battery %
+#   winrt-*  -> exact battery % for Xbox controllers, Bluetooth pairing
+hidapi; sys_platform == "win32"
+winrt-runtime; sys_platform == "win32"
+winrt-Windows.Foundation; sys_platform == "win32"
+winrt-Windows.Foundation.Collections; sys_platform == "win32"
+winrt-Windows.Gaming.Input; sys_platform == "win32"
+winrt-Windows.Devices.Enumeration; sys_platform == "win32"
+winrt-Windows.Devices.Radios; sys_platform == "win32"
